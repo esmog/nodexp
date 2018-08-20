@@ -24,7 +24,7 @@ Examples on POST and GET case accordingly:
 
 ## Disclaimer
 
-The tool’s purpose is strictly informational and educational and the tool could also be helpful during the process of a penetration test on Node.js services. Any other malicious or illegal usage of the tool is strongly not recommended and is clearly not a part of the purpose of this research.
+The tool’s purpose is strictly academic as it is developed in order to conduct my master's thesis. It could also be helpful during the process of a penetration test on Node.js services. Any other malicious or illegal usage of the tool is strongly not recommended and is clearly not a part of the purpose of this research.
 
 
 ## Prerequisites
@@ -52,5 +52,5 @@ NodeXP - Version 1.0.0
 
 ## Authors
 
-* **Dimitris Antonaropoulos** - *NodeXP* - [esmog](https://github.com/esmog)
+* **Dimitris Antonaropoulos** - [esmog](https://github.com/esmog)
 
