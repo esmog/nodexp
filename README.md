@@ -36,7 +36,7 @@ The tool’s purpose is strictly academic as it is developed in order to conduct
 
 ## NodeXP Testbeds
  
- - Download and run the Node.js files for both GET and POST cases from [here](https://github.com/esmog)
+ - Download and run the Node.js files for both GET and POST cases from [here](https://github.com/esmog/nodexp/tree/master/testbeds)
  - Visit [Nodegoat](http://nodegoat.herokuapp.com) or install  [Nodegoat](https://github.com/OWASP/NodeGoat) to your local machine!
 
 
