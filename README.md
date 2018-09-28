@@ -8,12 +8,12 @@ Download NodeXP by cloning the Git repository:
 
 	git clone https://github.com/esmog/nodexp
 
-To get a list of all options run (see at the end of README.md file):
+To get a list of all options run:
 
 	python2.7 nodexp -h
 
 
-Examples on POST and GET case accordingly:
+Examples for POST and GET cases accordingly:
 	
 	python2.7 nodexp.py --url="http://nodegoat.herokuapp.com/contributions" --pdata="preTax=[INJECT_HERE]" -c="connect.sid=s:i6fKU7kSLPX1l00WkOxDmEfncptcZP1v.fy9whjYW0fGAvbavzYSBz1C2ZhheDuQ1SU5qpgVzbTA"
 	python2.7 nodexp.py --url="http://nodegoat.herokuapp.com/contributions" --pdata="preTax=[INJECT_HERE]" -c="connect.sid=s:i6fKU7kSLPX1l00WkOxDmEfncptcZP1v.fy9whjYW0fGAvbavzYSBz1C2ZhheDuQ1SU5qpgVzbTA" --tech=blind
@@ -24,13 +24,14 @@ Examples on POST and GET case accordingly:
 
 ## Disclaimer
 
-The tool’s purpose is strictly academic as it is developed in order to conduct my master's thesis. It could also be helpful during the process of a penetration test on Node.js services. Any other malicious or illegal usage of the tool is strongly not recommended and is clearly not a part of the purpose of this research.
+The tool’s purpose is strictly academic and was developed in order to conduct my master's thesis. It could also be helpful during the process of a penetration test on Node.js services. Any other malicious or illegal usage of the tool is strongly not recommended and is clearly not a part of the purpose of this research.
 
 
 ## Prerequisites
 
  - Python 2.7
  - Metasploit Framework
+ - msfvenom
  - Kali Linux (or any other Linux distro with Metasploit Framework installed)
 
 
