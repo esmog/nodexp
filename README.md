@@ -21,6 +21,10 @@ Examples for POST and GET cases accordingly:
 	python2.7 nodexp.py --url="http://192.168.64.30/?name=[INJECT_HERE]" -c="connect.sid=s:i6fKU7kSLPX1l00WkOxDmEfncptcZP1v.fy9whjYW0fGAvbavzYSBz1C2ZhheDuQ1SU5qpgVzbTA"
 	python2.7 nodexp.py --url="http://192.168.64.30/?name=[INJECT_HERE]" -c="connect.sid=s:i6fKU7kSLPX1l00WkOxDmEfncptcZP1v.fy9whjYW0fGAvbavzYSBz1C2ZhheDuQ1SU5qpgVzbTA" --tech=blind
 
+Payloads used by both Blind and Results Based Injection technique are stored in "/files/blind_payloads.txt" and in "/files/payloads.txt".
+Payloads are written in every odd line number of text files and, in case of Results Based Injection, their expected responses are written in every even line number of the "payloads.txt" file as a list separeted with commas. Even line numbers of the "blind_payloads.txt" file are empty. 
+In order to stop the process of injection, "---end(nextline)---end" is used as a delimeter capable of stop parsing and injecting payloads, for both Blind and Result Based Injection cases. 
+Every user can maintain and update the payload txt files with its own payloads, as far as she/he follows the above instructions.
 
 ## Disclaimer
 
