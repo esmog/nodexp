@@ -29,12 +29,12 @@ Firstly, you should install 'body-parser' and 'express' packages, in the GET and
 
 Go to 'testbeds/GET' directory on your local machine and paste the command below in terminal:
 	
-		npm install express --save
+	npm install express --save
 		
 Go to 'testbeds/POST' directory and paste the commands below in terminal:	
 
-		npm install body-parser --save
-		nmp install express --save
+	npm install body-parser --save
+	nmp install express --save
 	
 After the correct installment of the packages you could run each service by running the command 'node' and the desirable js file (ex. node eval.js).	
 
