@@ -21,6 +21,33 @@ Examples for POST and GET cases accordingly:
 	python2.7 nodexp.py --url="http://192.168.64.30/?name=[INJECT_HERE]" -c="connect.sid=s:i6fKU7kSLPX1l00WkOxDmEfncptcZP1v.fy9whjYW0fGAvbavzYSBz1C2ZhheDuQ1SU5qpgVzbTA"
 	python2.7 nodexp.py --url="http://192.168.64.30/?name=[INJECT_HERE]" -c="connect.sid=s:i6fKU7kSLPX1l00WkOxDmEfncptcZP1v.fy9whjYW0fGAvbavzYSBz1C2ZhheDuQ1SU5qpgVzbTA" --tech=blind
 
+## Setting up and Use Testbeds
+
+In order get familiar with NodeXP you might need to set the Node.js testing services provided (/testbeds) and start using the tool. A local machine running Node.js server will be necessary.
+
+Firstly, you should install 'body-parser' and 'express' packages, in the GET and POST directories. 
+
+Go to 'testbeds/GET' directory on your local machine and paste the command below in terminal:
+	
+		npm install express --save
+		
+Go to 'testbeds/POST' directory and paste the commands below in terminal:	
+
+		npm install body-parser --save
+		nmp install express --save
+	
+After the correct installment of the packages you could run each service by running the command 'node' and the desirable js file (ex. node eval.js).	
+
+After you server is up and running, you are ready to run NodeXP and test it upon those services! 
+
+Example for GET case shown below:
+	
+	python2.7 nodexp.py --url=http://localiprunningnodejsserver:3001/?name=[INJECT_HERE]
+
+Example for POST case shown below: 
+	
+	python2.7 nodexp.py --url=http://localiprunningnodejsserver:3001/post.js --pdata=username=[INJECT_HERE]
+	
 ## Maintain and Update Payload files
 
 Payloads used by both Blind and Results Based Injection technique are stored in "/files/blind_payloads.txt" and in "/files/payloads.txt".
