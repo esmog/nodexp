@@ -1,17 +1,26 @@
-res.end("thats my payload -> 1 -> ***")
-thats my payload,1,$$$
-response.end("thats my payload -> 1 -> ***")
-thats my payload,1,$$$
 res.end(###)
 $$$
 response.end(###)
 $$$
 eval(***)
 $$$
+eval(***)
+$$$
 eval(###)
 $$$
+res.end("STATIC PAYLOAD")
+STATIC PAYLOAD
+thats my payload,$$$
+res.end("thats my payload - > ***")
+thats my payload,$$$
+response.end("thats my payload - > ***")
+thats my payload,$$$
+res.end("static and dynamic concatenation: 123TEST***")
+static and dynamic concatenation: 123TEST,$$$
+response.end("static concatenation: 123TEST***")
+static and dynamic concatenation: 123TEST,$$$
 res.end("ReferenceError -> ***")
-$$$
+$$$n
 res.end(###)
 $$$
 res.end('***')
@@ -26,10 +35,16 @@ response.end('***')
 $$$
 res.end('***')
 $$$
+---end
+---end
+
+##########################
+# TEST/DEBUG CASES BELOW #
+##########################
 10&roth=0&afterTax=0
 10
----end
----end
+response.end("thats my payload -> 1 -> ***")
+thats my payload,1,$$$
 10&roth=0&afterTax=0
 ReferenceError:,SyntaxError:,TypeError:,EvalError:,RangeError:
 90&roth=0&afterTax=0

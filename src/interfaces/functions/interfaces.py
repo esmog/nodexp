@@ -29,7 +29,6 @@ def make_request(parameter):
 			request = urllib2.Request(settings.url,data=parameter,headers={'Cookie':settings.cookie})
 		else:
 		# GET request
-			#print parameter
 			request = urllib2.Request(parameter,headers={'Cookie':settings.cookie})
 
 		html = urllib2.urlopen(request).read()

