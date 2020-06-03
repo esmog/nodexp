@@ -40,7 +40,7 @@ def init():
 	# injection values	
 	global inject_here, initial_parameter
 	# exploitation
-	global home_directory, msf_payload, msf_payload_bind, msf_payload_reverse, lhost, rhost, prefix_rhost, lport, encoding, payload_path, rc_path, spool_file, encode, append_top, append_bottom, exploitation_flags, ex_prompt_message, ex_options_message, ex_alter_tech_msg, ex_current_tech_msg, reverse_shell_payload,exploitation_state
+	global home_directory, msf_payload, msf_payload_bind, msf_payload_reverse, msf_payload_reverse_ssl, lhost, rhost, prefix_rhost, lport, encoding, payload_path, rc_path, spool_file, encode, append_top, append_bottom, exploitation_flags, ex_prompt_message, ex_options_message, ex_alter_tech_msg, ex_current_tech_msg, reverse_shell_payload,exploitation_state
 
 	exploitation_state = 0
 	# printing
@@ -49,6 +49,7 @@ def init():
 	global bl_prompt_message,bl_options_message,bl_current_tech_msg,bl_alter_tech_msg,follow_redirection
 
 	follow_redirection = 0
+	msf_payload_reverse_ssl = 'nodejs/shell_reverse_tcp_ssl'
 	msf_payload_bind = 'nodejs/shell_bind_tcp'
 	msf_payload_reverse = 'nodejs/shell_reverse_tcp'
 	exploitation_flags = ["LPORT","LHOST","PAYLOAD PATH","RC SCRIPT PATH"]

