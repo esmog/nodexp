@@ -90,7 +90,7 @@ NodeXP - Version 1.2.0
 
 - Bind shell functionality and automatic payload generation added.
 - Reverse ssl shell functionality and automatic payload generation added. 
-- Supports both static and dynamic payloads.
+- Supports both static and dynamic payloads on Results Based Detection technique
 - Supports mathematical operations and concatenation on Results Based Detection technique.
 
 ## Authors
