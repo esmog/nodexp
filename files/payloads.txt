@@ -20,7 +20,7 @@ static and dynamic concatenation: 123TEST,$$$
 response.end("static concatenation: 123TEST***")
 static and dynamic concatenation: 123TEST,$$$
 res.end("ReferenceError -> ***")
-$$$n
+$$$
 res.end(###)
 $$$
 res.end('***')
