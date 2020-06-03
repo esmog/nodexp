@@ -84,13 +84,14 @@ The tool’s purpose is strictly academic and was developed in order to conduct 
 
 ## Versioning
 
-NodeXP - Version 1.1.0
+NodeXP - Version 1.2.0
 
 ## Update Notes
 
-- Bind shell payload generation and injection added.
-
+- Bind shell functionality and automatic payload generation added.
+- Reverse ssl shell functionality and automatic payload generation added. 
 - Supports both static and dynamic payloads.
+- Supports mathematical operations and concatenation on Results Based Detection technique.
 
 ## Authors
 
