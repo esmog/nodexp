@@ -84,8 +84,12 @@ The tool’s purpose is strictly academic and was developed in order to conduct 
 
 ## Versioning
 
-NodeXP - Version 1.0.0
+NodeXP - Version 1.1.0
 
+## Update Notes
+
+Bind shell payload generation and injection added.
+Static and dynamic payloads support
 
 ## Authors
 
