@@ -88,9 +88,9 @@ NodeXP - Version 1.1.0
 
 ## Update Notes
 
-Bind shell payload generation and injection added.
+- Bind shell payload generation and injection added.
 
-Supports both static and dynamic payloads.
+- Supports both static and dynamic payloads.
 
 ## Authors
 
