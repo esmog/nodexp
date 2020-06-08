@@ -84,7 +84,7 @@ The tool’s purpose is strictly academic and was developed in order to conduct 
 
 ## Versioning
 
-NodeXP - Version 1.2.0
+NodeXP - Version 1.2.1
 
 ## Update Notes
 
@@ -92,6 +92,7 @@ NodeXP - Version 1.2.0
 - Reverse ssl shell functionality and automatic payload generation added. 
 - Supports both static and dynamic payloads on Results Based Detection technique
 - Supports mathematical operations and concatenation on Results Based Detection technique.
+- External module added (Beta) for the generation of new payloads through the use of RNN (Recurrent Neural Network).
 
 ## Authors
 
