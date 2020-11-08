@@ -84,10 +84,11 @@ The tool’s purpose is strictly academic and was developed in order to conduct 
 
 ## Versioning
 
-NodeXP - Version 1.2.1
+NodeXP - Version 1.2.2
 
 ## Update Notes
 
+- IDS Rules (Snort, Suricata) added, so as to detect attempts for Server Side Javascript Injection using NodeXP
 - Bind shell functionality and automatic payload generation added.
 - Reverse ssl shell functionality and automatic payload generation added. 
 - Supports both static and dynamic payloads on Results Based Detection technique
